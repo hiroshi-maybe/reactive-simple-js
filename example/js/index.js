@@ -11,8 +11,7 @@ $(document).ready(function(){
       return clickCount > 1;
     })
     .subscribe(function(n) {
-      // subscribe triggers subscribers of prev stream objects!!!
-      console.log(n, "multiple clicks");
+      $("#click_result").text(n+" multiple clicks");
     });
 
   // Follow test
